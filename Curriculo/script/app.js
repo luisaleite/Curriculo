@@ -27,4 +27,6 @@ app.get('/user', (req, res) => {
 
 
 
-app.listen(3020, () => console.log("rodei3000"));
+app.listen(process.env.PORT, () => {
+    console.log(`Server running`);
+});
